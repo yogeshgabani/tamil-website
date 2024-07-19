@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./activity.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- header menu -->
+    <header>
+        <div class="mobile-main-video">
+            <div class="d-flex justify-between align-center pt-20 py-40 main-header ">
+                <div class="d-flex align-center gap-30 logo-small">
+                    <div class="logo-img logo-small">
+                        <img src="./images/Logo-GIF-206-101 2.png" alt="">
+                    </div>
+                    <div class="">
+                        <div class="input-text font-16 big-input">
+                            <input class="font-weight-700" type="text" placeholder="Search Author, Title or Keyword">
+                            <i class="fa-solid fa-magnifying-glass text-dark-green search-icon" style="width: 19px;height: 19px;"></i>
+                        </div>
+                        <div class="input-text font-16 small-input">
+                            <input class="font-weight-700" type="text" placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass text-dark-green search-icon" style="width: 19px;height: 19px;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-center gap-20 main-header-menu">
+                    <div class="d-flex align-center nav-link heading-one">
+                        <img src="./images/Home.png" alt="">
+                        <h1 class="font-18 font-weight-700 text-gray"><a href="../home page/home.html">home</a></h1>
+                    </div>
+                    <div class="d-flex align-center nav-link heading-one">
+                        <img src="./images/Activities.png" alt="">
+                        <h1 class="font-18 font-weight-700 text-gray">Activities</h1>
+                    </div>
+                    <div class="d-flex align-center nav-link heading-one">
+                        <img src="./images/Zones.png" alt="">
+                        <h1 class="font-18 font-weight-700 text-gray">Zones</h1>
+                    </div>
+                    <div class="d-flex align-center nav-link heading-one">
+                        <img src="./images/Dashboard.png" alt="">
+                        <h1 class="font-18 font-weight-700 text-gray">Dashboard</h1>
+                    </div>
+                    <div class="bell-icon d-flex align-center">
+                        <i class="fa-solid fa-bell bell" style="color: #FFC107; font-size: 18px; "></i>
+                    </div>
+                    <div class="d-flex align-center gap-10 p-5 account-detail" >
+                        <img class="box-shadow-gray" src="./images/10017 1.png" style= "border-radius: 50px;" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pt-30 p-5">
+                <div class="border-grey"></div>
+            </div>
+        </div>
+        <div class="">
+            <div class="mobile-view-main d-flex justify-between align-center">
+                <div>
+                    <h1 class="text-dark-green">Activity</h1>
+                </div>
+                <div class="d-flex align-center gap-10 mobile-view">
+                    <i class="fa-solid fa-magnifying-glass text-dark-green"></i>
+                    <i class="fa-solid fa-bell bell bell-icon" style="color: #FFC107;"></i>
+                    <img src="./images/10017 1.png" alt="">
+                </div>
+            </div>
+        </div>       
+    </header>
+
+    
+
+    <div>
+        <!-- main activity menu -->
+        <div class="activity-box pb-40">
+            <div class="activity-sub-box">
+                <div class="border-bottm" style="border-bottom: 1px solid #909090;">
+                    <div class="act-menu d-flex justify-between align-center gap-10 pb-20">
+                        <div class="activity-heading" style="width: 40%;">
+                            <h1 class="text-gray font-size-40">Activities</h1>
+                        </div>
+                        <div class="" style="width: 100%;">
+                            <div class="mobile-activity-hide d-flex justyfy-end align-center gap-20">
+                                <button class="add-folder-btn font-18 text-gray"><i class="fa-solid fa-circle-plus" style="padding-right: 10px;"></i>Add New Folder</button>
+                                <button class="add-folder-btn font-18 text-gray"><i class="fa-solid fa-trash-can" style="padding-right: 10px;"></i>Recycle Bin</button>
+                                <div class="input-text-activity font-16 input-active">
+                                    <input class="font-18" type="text" placeholder="Search your activities">
+                                    <i class="fa-solid fa-magnifying-glass text-dark-green search-icon-one" style="width: 20px;height: 20px;"></i>
+                                </div>
+                                <button class="add-recycle-btn font-18 text-white"><i class="fa-solid fa-circle-plus" style="padding-right: 10px;"></i>Recycle Bin</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="mobile-activity">
+                        <div class="input-text-activity font-16 input-active d-flex justify-between gap-30">
+                            <input class="font-16" type="text" placeholder="Search your activities">
+                            <i class="font-18 fa-solid fa-magnifying-glass text-dark-green search-icon-one" style="width: 20px;height: 20px;"></i>
+                            <button class="add-activity-btn font-18 text-white"><i class="fa-solid fa-circle-plus" style="padding-right: 10px;"></i>Add Activity</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-min-icon d-flex justyfy-end gap-10 pt-20">
+                    <i class="fa-solid fa-minimize"></i>
+                    <i class="fa-solid fa-maximize"></i>
+                </div>
+                <div class="folder-name d-flex justify-between align-start">
+                    <h1 class="text-gray font-18">Folders</h1>
+                    <p class="font-16" style="color: #C4C4C4;">See All</p>
+                </div>
+
+        <!-- folder menu -->
+                <div class="folder-menu pt-30 gap-40">
+                    <div class="position-relative folder-image">
+                        <img src="./images/Folder.png" width="100%" alt="">
+                        <div class="folder-detail" style="padding: 0 12px; width: 100%;">
+                            <h1 class="text-white font-18" style="padding-bottom: 5px;">Social</h1>
+                            <div class="border-box position-relative d-flex justify-between align-center">
+                                <p class="text-white font-16">4 Activities</p>
+                                <i class="text-white font-16 fa-solid fa-circle-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative folder-image">
+                        <img src="./images/Folder.png" width="100%" alt="">
+                        <div class="folder-detail" style="padding: 0 12px; width: 100%;">
+                            <h1 class="text-white font-18" style="padding-bottom: 5px;">VIKI,Alber...</h1>
+                            <div class="border-box position-relative d-flex justify-between align-center">
+                                <p class="text-white font-16">4 Activities</p>
+                                <i class="text-white font-16 fa-solid fa-circle-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative folder-image">
+                        <img src="./images/Folder.png" width="100%" alt="">
+                        <div class="folder-detail" style="padding: 0 12px; width: 100%;">
+                            <h1 class="text-white font-18" style="padding-bottom: 5px;">Pravin</h1>
+                            <div class="border-box position-relative d-flex justify-between align-center">
+                                <p class="text-white font-16">4 Activities</p>
+                                <i class="text-white font-16 fa-solid fa-circle-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative folder-image">
+                        <img src="./images/Folder.png" width="100%" alt="">
+                        <div class="folder-detail" style="padding: 0 12px; width: 100%;">
+                            <h1 class="text-white font-18" style="padding-bottom: 5px;">Class 1</h1>
+                            <div class="border-box position-relative d-flex justify-between align-center">
+                                <p class="text-white font-16">4 Activities</p>
+                                <i class="text-white font-16 fa-solid fa-circle-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative folder-image">
+                        <img src="./images/Folder.png" width="100%" alt="">
+                        <div class="folder-detail" style="padding: 0 12px; width: 100%;">
+                            <h1 class="text-white font-18" style="padding-bottom: 5px;">Siva Aiyya</h1>
+                            <div class="border-box position-relative d-flex justify-between align-center">
+                                <p class="text-white font-16">4 Activities</p>
+                                <i class="text-white font-16 fa-solid fa-circle-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative folder-image">
+                        <img src="./images/Folder.png" width="100%" alt="">
+                        <div class="folder-detail" style="padding: 0 12px; width: 100%;">
+                            <h1 class="text-white font-18" style="padding-bottom: 5px;">Prabha</h1>
+                            <div class="border-box position-relative d-flex justify-between align-center">
+                                <p class="text-white font-16">4 Activities</p>
+                                <i class="text-white font-16 fa-solid fa-circle-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative folder-image">
+                        <img src="./images/Folder.png" width="100%" alt="">
+                        <div class="folder-detail" style="padding: 0 12px; width: 100%;">
+                            <h1 class="text-white font-18" style="padding-bottom: 5px;">Social</h1>
+                            <div class="border-box position-relative d-flex justify-between align-center">
+                                <p class="text-white font-16">4 Activities</p>
+                                <i class="text-white font-16 fa-solid fa-circle-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative folder-image">
+                        <img src="./images/Folder.png" width="100%" alt="">
+                        <div class="folder-detail" style="padding: 0 12px; width: 100%;">
+                            <h1 class="text-white font-18" style="padding-bottom: 5px;">Social</h1>
+                            <div class="border-box position-relative d-flex justify-between align-center">
+                                <p class="text-white font-16">4 Activities</p>
+                                <i class="text-white font-16 fa-solid fa-circle-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative folder-image">
+                        <img src="./images/Folder.png" width="100%" alt="">
+                        <div class="folder-detail" style="padding: 0 12px; width: 100%;">
+                            <h1 class="text-white font-18" style="padding-bottom: 5px;">Prabha</h1>
+                            <div class="border-box position-relative d-flex justify-between align-center">
+                                <p class="text-white font-16">4 Activities</p>
+                                <i class="text-white font-16 fa-solid fa-circle-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative folder-image">
+                        <img src="./images/Folder.png" width="100%" alt="">
+                        <div class="folder-detail" style="padding: 0 12px; width: 100%;">
+                            <h1 class="text-white font-18" style="padding-bottom: 5px;">Social</h1>
+                            <div class="border-box position-relative d-flex justify-between align-center">
+                                <p class="text-white font-16">4 Activities</p>
+                                <i class="text-white font-16 fa-solid fa-circle-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative folder-image">
+                        <img src="./images/Folder.png" width="100%" alt="">
+                        <div class="folder-detail" style="padding: 0 12px; width: 100%;">
+                            <h1 class="text-white font-18" style="padding-bottom: 5px;">Social</h1>
+                            <div class="border-box position-relative d-flex justify-between align-center">
+                                <p class="text-white font-16">4 Activities</p>
+                                <i class="text-white font-16 fa-solid fa-circle-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative folder-image">
+                        <img src="./images/Folder.png" width="100%" alt="">
+                        <div class="folder-detail" style="padding: 0 12px; width: 100%;">
+                            <h1 class="text-white font-18" style="padding-bottom: 5px;">Prabha</h1>
+                            <div class="border-box position-relative d-flex justify-between align-center">
+                                <p class="text-white font-16">4 Activities</p>
+                                <i class="text-white font-16 fa-solid fa-circle-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative folder-image">
+                        <img src="./images/Folder.png" width="100%" alt="">
+                        <div class="folder-detail" style="padding: 0 12px; width: 100%;">
+                            <h1 class="text-white font-18" style="padding-bottom: 5px;">Prabha</h1>
+                            <div class="border-box position-relative d-flex justify-between align-center">
+                                <p class="text-white font-16">4 Activities</p>
+                                <i class="text-white font-16 fa-solid fa-circle-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- image card menu detail -->
+
+                <div>
+
+                    <div class="card-box-main ">
+                        <div class="card-menu-main-box position-relative">
+                            <div>
+                                <img src="./images/Classic ss.png" width="100%" alt="">
+                            </div>
+                            <div style="padding: 16px 12px;">
+                                <div class="d-flex justify-between align-center pb-10">
+                                    <i class="text-light-gray font-16 fa-solid fa-lock"></i>
+                                    <i class="text-light-gray font-16 fa-solid fa-ellipsis"></i>
+                                </div>
+                                <div class="card-menu-title">
+                                    <h3 class="text-gray font-18 text-center">Dynamic Title from user...</h3>
+                                </div>
+                                <div class="">
+                                    <p class="text-gray font-22 text-center">By Fahad</p>
+                                    <h2 class="card-menu-name text-gray font-22 text-center">Match up</h2>
+                                </div>
+                                <div class="d-flex justify-center align-center card-menu-name card-icon">
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-eye"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-thumbs-up"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-menu-main-box position-relative">
+                            <div>
+                                <img src="./images/Kurinji ss.png" width="100%" alt="">
+                            </div>
+                            <div style="padding: 16px 12px;">
+                                <div class="d-flex justify-between align-center pb-10">
+                                    <i class="text-light-gray font-16 fa-solid fa-lock"></i>
+                                    <i class="text-light-gray font-16 fa-solid fa-ellipsis"></i>
+                                </div>
+                                <div class="card-menu-title">
+                                    <h3 class="text-gray font-18 text-center">Group Sort</h3>
+                                </div>
+                                <div class="">
+                                    <p class="text-gray font-22 text-center">By Fahad</p>
+                                    <h2 class="card-menu-name text-gray font-22 text-center">Kurinji</h2>
+                                </div>
+                                <div class="d-flex justify-center align-center card-menu-name card-icon">
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-eye"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-thumbs-up"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-menu-main-box position-relative">
+                            <div>
+                                <img src="./images/Mullai ss.png" width="100%" alt="">
+                            </div>
+                            <div style="padding: 16px 12px;">
+                                <div class="d-flex justify-between align-center pb-10">
+                                    <i class="text-light-gray font-16 fa-solid fa-lock"></i>
+                                    <i class="text-light-gray font-16 fa-solid fa-ellipsis"></i>
+                                </div>
+                                <div class="card-menu-title">
+                                    <h3 class="text-gray font-18 text-center">Labelled Diagram</h3>
+                                </div>
+                                <div class="">
+                                    <p class="text-gray font-22 text-center">By Fahad</p>
+                                    <h2 class="card-menu-name text-gray font-22 text-center">Mullai</h2>
+                                </div>
+                                <div class="d-flex justify-center align-center card-menu-name card-icon">
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-eye"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-thumbs-up"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-menu-main-box position-relative">
+                            <div>
+                                <img src="./images/Neidhal ss.png" width="100%" alt="">
+                            </div>
+                            <div style="padding: 16px 12px;">
+                                <div class="d-flex justify-between align-cente pb-10">
+                                    <i class="text-light-gray font-16 fa-solid fa-lock"></i>
+                                    <i class="text-light-gray font-16 fa-solid fa-ellipsis"></i>
+                                </div>
+                                <div class="card-menu-title">
+                                    <h3 class="text-gray font-18 text-center">Labelled Diagram</h3>
+                                </div>
+                                <div class="">
+                                    <p class="text-gray font-22 text-center">By Fahad</p>
+                                    <h2 class="card-menu-name text-gray font-22 text-center">Classic</h2>
+                                </div>
+                                <div class="d-flex justify-center align-center card-menu-name card-icon">
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-eye"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-thumbs-up"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-menu-main-box position-relative">
+                            <div>
+                                <img src="./images/Classic ss (1).png" width="100%" alt="">
+                            </div>
+                            <div style="padding: 16px 12px;">
+                                <div class="d-flex justify-between align-center pb-10">
+                                    <i class="text-light-gray font-16 fa-solid fa-lock"></i>
+                                    <i class="text-light-gray font-16 fa-solid fa-ellipsis"></i>
+                                </div>
+                                <div class="card-menu-title">
+                                    <h3 class="text-gray font-18 text-center">Labelled Diagram</h3>
+                                </div>
+                                <div class="">
+                                    <p class="text-gray font-22 text-center">By Fahad</p>
+                                    <h2 class="card-menu-name text-gray font-22 text-center">Mullai</h2>
+                                </div>
+                                <div class="d-flex justify-center align-center card-menu-name card-icon">
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-eye"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-thumbs-up"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-menu-main-box position-relative">
+                            <div>
+                                <img src="./images/Kurinji ss (1).png" width="100%" alt="">
+                            </div>
+                            <div style="padding: 16px 12px;">
+                                <div class="d-flex justify-between align-center pb-10">
+                                    <i class="text-light-gray font-16 fa-solid fa-lock"></i>
+                                    <i class="text-light-gray font-16 fa-solid fa-ellipsis"></i>
+                                </div>
+                                <div class="card-menu-title">
+                                    <h3 class="text-gray font-18 text-center">Labelled Diagram</h3>
+                                </div>
+                                <div class="">
+                                    <p class="text-gray font-22 text-center">By Fahad</p>
+                                    <h2 class="card-menu-name text-gray font-22 text-center">Neidhal</h2>
+                                </div>
+                                <div class="d-flex justify-center align-center card-menu-name card-icon">
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-eye"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-thumbs-up"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-menu-main-box position-relative">
+                            <div>
+                                <img src="./images/Mullai ss (1).png" width="100%" alt="">
+                            </div>
+                            <div style="padding: 16px 12px;">
+                                <div class="d-flex justify-between align-center pb-10">
+                                    <i class="text-light-gray font-16 fa-solid fa-lock"></i>
+                                    <i class="text-light-gray font-16 fa-solid fa-ellipsis"></i>
+                                </div>
+                                <div class="card-menu-title">
+                                    <h3 class="text-gray font-18 text-center">Group Sort</h3>
+                                </div>
+                                <div class="">
+                                    <p class="text-gray font-22 text-center">By Fahad</p>
+                                    <h2 class="card-menu-name text-gray font-22 text-center">Neidhal</h2>
+                                </div>
+                                <div class="d-flex justify-center align-center card-menu-name card-icon">
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-eye"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-thumbs-up"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-menu-main-box position-relative">
+                            <div>
+                                <img src="./images/Neidhal ss (1).png" width="100%" alt="">
+                            </div>
+                            <div style="padding: 16px 12px;">
+                                <div class="d-flex justify-between align-center pb-10">
+                                    <i class="text-light-gray font-16 fa-solid fa-lock"></i>
+                                    <i class="text-light-gray font-16 fa-solid fa-ellipsis"></i>
+                                </div>
+                                <div class="card-menu-title">
+                                    <h3 class="text-gray font-18 text-center">Labelled Diagram</h3>
+                                </div>
+                                <div class="">
+                                    <p class="text-gray font-22 text-center">By Fahad</p>
+                                    <h2 class="card-menu-name text-gray font-22 text-center">Classic</h2>
+                                </div>
+                                <div class="d-flex justify-center align-center card-menu-name card-icon">
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-eye"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-thumbs-up"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-menu-main-box position-relative">
+                            <div>
+                                <img src="./images/Neidhal ss (2).png" width="100%" alt="">
+                            </div>
+                            <div style="padding: 16px 12px;">
+                                <div class="d-flex justify-between align-center pb-10">
+                                    <i class="text-light-gray font-16 fa-solid fa-lock"></i>
+                                    <i class="text-light-gray font-16 fa-solid fa-ellipsis"></i>
+                                </div>
+                                <div class="card-menu-title">
+                                    <h3 class="text-gray font-18 text-center">Dynamic Title from user...</h3>
+                                </div>
+                                <div class="">
+                                    <p class="text-gray font-22 text-center">By Fahad</p>
+                                    <h2 class="card-menu-name text-gray font-22 text-center">Mullai</h2>
+                                </div>
+                                <div class="d-flex justify-center align-center card-menu-name card-icon">
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-eye"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-thumbs-up"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-menu-main-box position-relative">
+                            <div>
+                                <img src="./images/Classic ss (2).png" width="100%" alt="">
+                            </div>
+                            <div style="padding: 16px 12px;">
+                                <div class="d-flex justify-between align-center pb-10">
+                                    <i class="text-light-gray font-16 fa-solid fa-lock"></i>
+                                    <i class="text-light-gray font-16 fa-solid fa-ellipsis"></i>
+                                </div>
+                                <div class="card-menu-title">
+                                    <h3 class="text-gray font-18 text-center">Dynamic Title from user...</h3>
+                                </div>
+                                <div class="">
+                                    <p class="text-gray font-22 text-center">By Fahad</p>
+                                    <h2 class="card-menu-name text-gray font-22 text-center">Mullai</h2>
+                                </div>
+                                <div class="d-flex justify-center align-center card-menu-name card-icon">
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-eye"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-thumbs-up"></i>
+                                    </div>
+                                    <div class="d-flex text-center card-menu-icon" style="border: none;">
+                                        <p class="text-gray font-18">0</p>
+                                        <i class="text-gray font-18 fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="number-next d-flex justify-center align-center gap-10" style="padding-top: 60px;">
+                        <span class="font-18">1</span>
+                        <span class="font-18">2</span>
+                        <span class="font-18">3</span>
+                        <span class="font-18">4</span>
+                        <span class="font-18">5</span>
+                        <span class="font-18">6</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+
+    <!-- footer menu -->
+
+            <div class="footer-menu">
+                <div class="box-shado list-footer-menu">
+                    <div class="d-flex justify-between gap-10">
+                        <div class="">
+                            <ul>
+                                <h1 class="text-gray">Home</h1>
+                                <li class="text-light-gray"><link rel="stylesheet" href="#">Activities</li>
+                                <li class="text-light-gray"><link rel="stylesheet" href="#">Zones</li>
+                                <li class="text-light-gray"><link rel="stylesheet" href="#">About Us</li>
+                                <li class="text-light-gray"><link rel="stylesheet" href="#">Pricing</li>
+                                <li class="text-light-gray"><link rel="stylesheet" href="#">Partners</li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <ul>
+                                <h1 class="text-gray">User</h1>
+                                <li class="text-light-gray"><link rel="stylesheet" href="#">Sign In</li>
+                                <li class="text-light-gray"><link rel="stylesheet" href="#">New Account</li>
+                                <li class="text-light-gray"><link rel="stylesheet" href="#">Demo</li>
+                                <li class="text-light-gray"><link rel="stylesheet" href="#">Career</li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <ul>
+                                <h1 class="text-gray">Resources</h1>
+                                <li class="text-light-gray"><link rel="stylesheet" href="#">Documentation</li>
+                                <li class="text-light-gray"><link rel="stylesheet" href="#">Tutorials</li>
+                                <li class="text-light-gray"><link rel="stylesheet" href="#">Support</li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <ul>
+                                <h1 class="text-gray">Support</h1>
+                                <li class="text-light-gray"><link rel="stylesheet" href="#">Help Center</li>
+                                <li class="text-light-gray"><link rel="stylesheet" href="#">Privacy Policy</li>
+                                <li class="text-light-gray"><link rel="stylesheet" href="#">Conditions</li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <ul>
+                                <h1 class="text-gray">Contact Us</h1>
+                                <li class="text-light-gray"><link rel="stylesheet" href="#">admin@playwithtamil.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-right social-icon">
+                        <img src="./images/Fackbook.png" alt="">
+                        <img src="./images/Instagram.png" alt="">
+                        <img src="./images/Twitter.png" alt="">
+                        <img src="./images/Youtube.png" alt="">
+                    </div>
+                    <div style="padding: 13px 0;">
+                        <p class="text-gray font-16 text-center">Copyright 2021.All Rights Reserved.</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- mobile-home menu -->
+        <div >
+            <div class="box-shado home-menu home-activity">
+                <div class="d-flex justify-between align-center home-sub-menu">
+                    <div class="home-menu text-center">
+                        <i class="fa-solid fa-house"></i>
+                        <h1>HOME</h1>
+                    </div>
+                    <div class="home-menu text-center">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h1>ACTIVITIES</h1>
+                    </div>
+                    <div class="home-menu text-center">
+                        <i class="fa-solid fa-user-group"></i>
+                        <h1>ZONES</h1>
+                    </div>
+                    <div class="home-menu text-center">
+                        <i class="fa-brands fa-slideshare"></i>
+                        <h1>DASHBOARD</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
